@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "",
-    "password": "",
+    "email": "61557780285734",
+    "password": "smartlocking#270",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -142,7 +142,7 @@
     "presence": false
   },
   "optionsFca": {
-    "forceLogin": true,
+    "forceLogin": false,
     "listenEvents": true,
     "updatePresence": true,
     "listenTyping": true,
