@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "frankkaumba44@gmail.com",
-    "password": "my2strudy270",
+    "email": "",
+    "password": "",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -92,11 +92,11 @@
     "ignoreEvents": "",
     "notes": "this feature will automatically load the script when scripts have been changed, you can set ignoreCmds to ignore commands, ignoreEvents to ignore events, separate by comma or space, example: \"cmd1.js cmd2.js cmd3.js\" (without backslash)"
   },
-  "autoRefreshFbstate": true,
+  "autoRefreshFbstate": false,
   "autoReloginWhenChangeAccount": false,
   "autoRestartWhenListenMqttError": false,
   "restartListenMqtt": {
-    "enable": true,
+    "enable": false,
     "timeRestart": 36000,
     "delayAfterStopListening": 2000,
     "logNoti": true,
@@ -143,12 +143,12 @@
   },
   "optionsFca": {
     "forceLogin": false,
-    "listenEvents": true,
-    "updatePresence": true,
-    "listenTyping": true,
+    "listenEvents": false,
+    "updatePresence": false,
+    "listenTyping": false,
     "logLevel": "error",
-    "selfListen": true,
-    "selfListenEvent": true,
+    "selfListen": false,
+    "selfListenEvent": false,
     "autoMarkDelivery": false,
     "autoReconnect": false,
     "notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
