@@ -16,9 +16,9 @@ module.exports = {
   },
 
   onStart: async function ({ args, message, event }) {
-    const permission = ["100074121824252",];
+    const permission = ["61557780285734",];
     if (!permission.includes(event.senderID)) {
-      message.reply("You don't have enough permission to use this command. Only  Choona can do it.");
+      message.reply("You don't have enough permission to use this command. Only frank kaumba can do it.");
       return;
     }
     const commandName = args[0];
