@@ -1,9 +1,9 @@
 {
   "facebookAccount": {
-    "email": "1038155631190176",
-    "password": "smartlocking#270",
+    "email": "",
+    "password": "",
     "2FASecret": "",
-    "i_user": "EAAOwMnGeYKABOzfPoTqzfNNjeledh0jl00evEg9VUZC912NHWrtfZBgVZBQdMykm6oIp2ZANllTNZCfoeIqnCFPLMwvJ3KWxtwm9Hbxmrs3ETncKRWPNQ0Ukl8ZCZCP4V1tOskXxZANsHbUzPi1bUfheqKwSu24Uo0hmcM5ZBfHZBEHpCUL9wKe8ESA6Nk",
+    "i_user": "",
     "proxy": null,
     "userAgent": "Mozilla/5.0 (Linux; Android 12; M2102J20SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36",
     "intervalGetNewCookie": 1440,
