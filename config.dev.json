@@ -128,7 +128,7 @@
     "userBanned": false,
     "needRoleToUseCmd": false,
     "needRoleToUseCmdOnReply": false,
-    "needRoleToUseCmdOnReaction": false
+    "needRoleToUseCmdOnReaction": true
   },
   "logEvents": {
     "disableAll": false,
@@ -143,11 +143,11 @@
   },
   "optionsFca": {
     "forceLogin": true,
-    "listenEvents": false,
+    "listenEvents": true,
     "updatePresence": true,
     "listenTyping": false,
     "logLevel": "error",
-    "selfListen": false,
+    "selfListen": true,
     "selfListenEvent": true,
     "autoMarkDelivery": false,
     "autoReconnect": false,
