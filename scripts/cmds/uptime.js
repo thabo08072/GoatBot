@@ -1,28 +1,54 @@
+const moment = require('moment-timezone');
+moment.tz.setDefault('Africa/Malawi');
+const os = require('os');
+
 module.exports = {
   config: {
     name: "uptime",
-    aliases: ["up", "upt"],
+    aliases: ["up","prime"],
     version: "1.0",
-    author: "XyryllPanget",
+    countDown: 10,
+    author: "Hadi V |Frankkaumbadev",
     role: 0,
     shortDescription: {
-      en: "Displays the uptime of the bot."
+      en: "check your status bot"
     },
     longDescription: {
-      en: "Displays the amount of time that the bot has been running for."
+      en: "check your status bot"
     },
-    category: "System",
+    category: "system",
     guide: {
-      en: "Use {p}uptime to display the uptime of the bot."
+      en: "{pn}"
     }
   },
-  onStart: async function ({ api, event, args }) {
-    const uptime = process.uptime();
-    const seconds = Math.floor(uptime % 60);
-    const minutes = Math.floor((uptime / 60) % 60);
-    const hours = Math.floor((uptime / (60 * 60)) % 24);
-    const days = Math.floor(uptime / (60 * 60 * 24));
-    const uptimeString = `${hours} hours ${minutes} minutes ${seconds} second`;
-    api.sendMessage(`hello user, the bot has been running for ${uptimeString}.`, event.threadID);
-  }
+  
+onStart: async function ({ message, event, usersData, threadsData }) {
+     const uptime = process.uptime();
+     const startTime = Date.now();
+     const hours = Math.floor(uptime / 3600);
+     const minutes = Math.floor((uptime % 3600) / 60);
+     const seconds = Math.floor(uptime % 60);
+     
+     const arif = `${hours} hours ${minutes} minutes ${seconds} seconds`;
+     
+     const edi = "facebook.com/efkidtrapgamer";
+     const vania = await global.utils.getStreamFromURL("https://i.imgur.com/jDQLca1.jpeg");
+   
+     const now = moment();
+     const riley = now.format('DD-MMMM-Y/hh.mm.ss A');
+     
+     const veli = `${Math.round(os.totalmem() / (1024 * 1024 * 1024))} GB`;
+     const putra = await usersData.getAll();
+     const loufi = await threadsData.getAll(); 
+     const luxion = `${os.type()} ${os.release()}`;
+     const rizky = `${os.cpus()[0].model} (${os.cpus().length} cores)`
+     
+     const endTime = Date.now();
+     const raffa = endTime - startTime;
+     
+     const hadi = `${arif}\n━━━━━━━━━━━\nBot Ping: ${raffa}\nTotal User: ${putra.length}\nTotal Grup: ${loufi.length}\nMemory: ${veli}\nOS: ${luxion}\nCPU: ${rizky}\n\ninfo: ${riley}\nDevelover: ${edi}`
+
+     message.reaction("✔", event.messageID);
+     message.reply({ body: hadi, attachment: vania }, event.threadID);
+  },
 };
