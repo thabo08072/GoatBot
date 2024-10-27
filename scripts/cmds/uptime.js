@@ -8,7 +8,7 @@ module.exports = {
     aliases: ["up","prime"],
     version: "1.0",
     countDown: 10,
-    author: "Hadi V |Frankkaumbadev",
+    author: "Hadi V |ThaboDlamini",
     role: 0,
     shortDescription: {
       en: "check your status bot"
@@ -31,7 +31,7 @@ onStart: async function ({ message, event, usersData, threadsData }) {
      
      const arif = `${hours} hours ${minutes} minutes ${seconds} seconds`;
      
-     const edi = "facebook.com/efkidtrapgamer";
+     const edi = "https://www.facebook.com/profile.php?id=61558534761993";
      const vania = await global.utils.getStreamFromURL("https://i.imgur.com/jDQLca1.jpeg");
    
      const now = moment();
